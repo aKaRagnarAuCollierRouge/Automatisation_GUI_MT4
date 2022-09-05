@@ -347,7 +347,7 @@ class Modifier_paramètre_default_Window(QWidget):
         #widget pour SL
 
         self.Label_SL = QLabel("Stop Loss: ")
-        self.SL = QSpinBox()
+        self.SL = QDoubleSpinBox()
         self.SL.setValue(value_SL)
         self.btn_SL = QPushButton('Modifier Stop loss')
         self.btn_SL.setStyleSheet("""background-color: black;
@@ -436,6 +436,8 @@ class Modifier_paramètre_default_Window(QWidget):
         self.btn_account.clicked.connect(self.modifier_account)
         self.btn_paire.clicked.connect(self.modifier_paire)
         self.btn_partiel.clicked.connect(self.modifier_partiel)
+        self.btn_Entrée.clicked.connect(self.modifier_Entrée)
+        self.btn_SL.clicked.connect(self.modifier_SL)
 
 
     def modifier_commission(self):
@@ -472,21 +474,21 @@ class Modifier_paramètre_default_Window(QWidget):
         tb = db.table("parametre_default")
         partiel = self.partiel.value()
         tb.update({"value":partiel}, where("type") == "nombre de partiel")
-        self.confirmer_paire.setText(f"Le nombre de partiel par default  est: {partiel}")
+        self.confirmer_partiel.setText(f"Le nombre de partiel par default  est: {partiel}")
 
     def modifier_SL(self):
         db = TinyDB('Paires.json', indent=4)
         tb = db.table("parametre_default")
         SL = self.SL.value()
         tb.update({"value": SL}, where("type") == "Stop Loss")
-        self.confirmer_paire.setText(f"Le SL par default  est: {SL}")
+        self.confirmer_Entrée.setText(f"Le SL par default  est: {SL}")
 
     def modifier_Entrée(self):
         db = TinyDB('Paires.json', indent=4)
         tb = db.table("parametre_default")
         Entrée = self.Entrée.value()
         tb.update({"value": Entrée}, where("type") == "Entree")
-        self.confirmer_paire.setText(f"L'entrée par default  est: {Entrée}")
+        self.confirmer_Entrée.setText(f"L'entrée par default  est: {Entrée}")
 
 
 
