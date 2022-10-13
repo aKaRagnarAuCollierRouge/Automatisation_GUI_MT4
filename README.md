@@ -72,11 +72,11 @@ rentrer_position_partiel.py
 1751-> fct changeant le label en fonction du DD
 1792->Activate ou desactive strategie DD lorsque l'on appuie sur le bouton"Activer/Desactiver strategie drawdown" dans la barre d'outils
 1813-> remet à 0% le DD
-1829 -> fcts permettant de changer le style de l'appli lorsque l'on clique sur le bouton changer visuel de la barre d'outils
-1879-> calcul activation , montant du compte dans l'onglet de calcul de strategie DD
-1923->applique la strategie calculer au prealable lorsque l'on est dans l'onglet strategie DD(bouton "Appliquer strategie")
-2033-> juste changement des labels OK pour dire que le champs est bien remplit
-2104-> fonction qui sert à revenir à la derniere strategie de DD si on a fait une erreur dans la barre d'outils
+1829 -> fcts permettant de changer le style de l'appli lorsque l'on clique sur le bouton changer visuel de la barre d'outils  
+1879-> calcul activation , montant du compte dans l'onglet de calcul de strategie DD  
+1923->applique la strategie calculer au prealable lorsque l'on est dans l'onglet strategie DD(bouton "Appliquer strategie")  
+2033-> juste changement des labels OK pour dire que le champs est bien remplit  
+2104-> fonction qui sert à revenir à la derniere strategie de DD si on a fait une erreur dans la barre d'outils  
 2240->
 
 
