@@ -1,0 +1,51 @@
+1)Label obligatoire :
+	self.Label_lot_direct,
+	self.Label_lot_différé,
+	self.Label_prix_entrée,
+	self.Label_type_ordre,
+	self.Label_Prix_Stop_Limit,
+	self.Label_account,
+	self.Label_valeur_pips,
+	self.Label_risque_pourcentage,
+	self.Label_taille_SL
+
+2)Label facultatif:
+	self.Label_stop_loss_direct,
+	self.Label_take_profit_direct,
+	self.Label_nombre_partiel_direct,
+	self.Label_stop_loss_différée,
+	self.Label_profit_différée,
+	self.Label_nombre_partiel_différée,
+	self.Label_paires,
+	self.Label_Commision,
+	self.Label_Entrée_calcul_lot,
+	self.Label_Stop_loss_calcul_lot,
+	self.Label_Take_profit_calcul_lot
+
+Label neutre:Label_MT_entrée,
+	self.Label_MT_différée,
+	self.Label_Lot,Label_choix_manager,
+	self.Label_MT_sl_tp_fast,self.label_SL,
+	self.label_TP,self.label_nb_changement,
+	self.label_nb_ordre_fermé,
+	self.label_account_calcul_dd,
+	self.label_trade_avant_pallier1,
+	self.label_risque_base,
+	self.label_trade_avant_pallier2,
+	self.label_division_pallier1,
+	self.label_trade_avant_pallier3
+	self.label_division_risque_pallier2
+ 	self.label_trade_avant_pallier4
+	self.label_division_risque_pallier3
+	self.label_trade_avant_pallier5
+	self.label_division_risque_pallier4
+	self.label_trade_après_pallier5
+	self.label_division_risque_pallier5
+
+
+
+4)Label de vérification:
+	 self.verification_validation_calcul
+
+5)Label OK:
+	self.label_OK1......self.label_OK13
